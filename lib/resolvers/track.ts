@@ -4,6 +4,15 @@ const sequence: any = require('when/sequence');
 
 export function trackResolvers(spotifyApiClient) {
   return {
+    saved(track) {
+      const results = safeApiCall(
+        spotifyApiClient,
+        'containsMySavedTracks',
+        null,
+        [track.id]
+      )
+      return results ? results[0] : false;
+    }
     artists(track: any, variables: any) {
       if (!!variables.full) {
         return syncedPoll('Track.artists', () => {

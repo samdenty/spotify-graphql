@@ -1,9 +1,10 @@
 {
-  "name": "spotify-graphql",
-  "version": "1.4.0",
+  "name": "@samdd/spotify-graphql",
+  "private": false,
+  "version": "1.4.1",
   "repository": {
     "type": "git",
-    "url": "git://thefrenchhouse/spotify-graphql.git"
+    "url": "git://samdenty/spotify-graphql.git"
   },
   "main": "dist/index.js",
   "typings": "definitions/spotify-graphql",

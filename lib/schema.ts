@@ -1,6 +1,7 @@
 const schema: string = `
 type Track {
   id: String
+  saved: Boolean
   album(full: Int): Album
   artists(full: Int, throttle: Int): [Artist]
   available_markets: [String]
